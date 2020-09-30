@@ -9,17 +9,24 @@ import {
 const routerHistory = createWebHistory()
 
 
-import Home from '/@/page/home/index.vue';
 // todo 目前不支持 () => import( /* webpackChunkName: 'Home' */ ) 引入
-console.log(Home);
+import Home from '/@/page/home/index.vue';
+import Login from '/@/page/Login/index.vue';
 
 const router = createRouter({
     history: routerHistory,
-    routes: [{
-        path: '/',
-        name: 'Home',
-        component: Home,
-    }],
+    routes: [
+        {
+            path: '/login',
+            name: 'Login',
+            component: Login,
+        },
+        {
+          path: '/',
+          name: 'Home',
+          component: Home,
+        }
+    ],
 })
 
 export default router
