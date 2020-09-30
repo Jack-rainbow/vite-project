@@ -56,10 +56,14 @@ vite会启动一个web server来代理这些模块，其里边就是借助koa启
 ### problem:
 
 1.[error: flatpickr does not provide an export named, ESM bundles](https://github.com/vitejs/vite/issues/813)
+
 2.vue文件里边, 修改css 热更新无法响应(时而好时而坏，好煎熬~~~~~改一次css要重启一次vite，我要疯了)
+
 3.尝试使用ant design定制主题时,出现问题（https://2x.antdv.com/docs/vue/customize-theme-cn/）
+
 4.因为使用的是ant-design-vue, 所以里边有很多方法是是@ant-design-vue/use,需要以@开头,但是我并不想要每次引用一个方法就在optimizeDeps.include里边加一次，
 这样让我不能很愉快的工作
+
 5.尝试yarn add X后, vite无法做到类似webpack 热更新，只能手动重新启动
 
 
