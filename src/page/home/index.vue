@@ -22,7 +22,7 @@
             Link
         </a-button>
 
-        <div class="abc"> 
+        <div class="alias-css abcd abc"> 
             test嘎嘎嘎嘎嘎过过过过过过
         </div>
   </div>
@@ -41,10 +41,9 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@color: red;
-// @import '/src/style/common.less';
+// 暂不支持 别名引用，看起来是vite的bug，至今仍在issuse里边挂着，只好绝对引用
+@import "../../style/common.less";
 .abc{
     color: @color;
 }
-
 </style>

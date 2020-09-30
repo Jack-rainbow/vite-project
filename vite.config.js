@@ -9,15 +9,13 @@ export default {
         '/@/': path.resolve(__dirname, './src'),
         '/@/page': path.resolve(__dirname, './src/page'),
         '/@components/': path.resolve(__dirname, './src/components'),
+        '/@S/': path.resolve(__dirname, './src/style'),
         '/@utils/': path.resolve(__dirname, './src/utils'),
     },
 
     css: {
         // todo 引用全局css 未生效（https://github.com/vitejs/vite/issues/650）
       loaderOptions: {
-        less: {
-          additionalData: '@color: red;'
-        }
       }
     },
 
